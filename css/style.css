@@ -1,0 +1,13 @@
+.overlay-filter{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.overlay-filter:hover{
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.2s;
+}
+
+.main-container{
+    max-width: 900px;
+}
