@@ -11,3 +11,26 @@
 .main-container{
     max-width: 900px;
 }
+
+.footer-links{
+    cursor: pointer;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+
+.carrito-img{
+    max-width: 50%;
+}
+
+
+.carousel-text{
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 35%;
+    height: 110px;
+}
+
+
+

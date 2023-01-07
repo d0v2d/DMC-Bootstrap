@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- ICONOS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- MI CSS  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- TITLE -->
+    <title>DMShop</title>
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="container">
+
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar bg-dark bg-body-tertiary rounded-bottom border-bottom border-start border-end"
+                data-bs-theme="dark">
+                <div class="container-fluid">
+
+                    <h2 class="navbar-brand fw-bold fs-2 m-0 mb-1 me-3">DMShop</h2>
+
+                    <form class="d-flex d-none d-md-flex d-lg-none" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse d-lg-flex" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 300px;">
+                            <li class="ms-2 me-2 nav-item">
+                                <a class="nav-link active fs-5" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="ms-2 me-2 nav-item dropdown">
+                                <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorias
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./catalogo.html">Hombre</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./catalogo.html">Mujer</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="./catalogo.html">Niños</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Outlet</a></li>
+                                </ul>
+                            </li>
+                            <li class="ms-2 me-2 nav-item">
+                                <a class="nav-link fs-5" href="./carrito.html"><i class="bi bi-cart"></i></a>
+                            </li>
+                            <li class="ms-2 me-2 nav-item">
+                                <a class="nav-link fs-5" href="./login.html">Iniciar Sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="d-flex d-none d-lg-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+        </header>
+
+
+        <main class="main mt-4 d-flex justify-content-center flex-column align-items-center">
+
+            <h1 class="mb-4">Mi Carrito</h1>
+
+
+            <section class="d-flex align-content-center justify-content-center flex-column">
+
+                <div class="mb-3 bg-dark text-light border-0 border-top border-bottom border-light pt-2 pb-md-2"
+                    style="max-width: 1000px;">
+                    <div class="row g-0 d-flex text-center align-items-center">
+
+                        <div class="col-md-3">
+                            <img src="../assets/images/clothes1.jpg" class="img-fluid carrito-img">
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Precio</p>
+                            <p>29.99€</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Cantidad</p>
+                            <p>1</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Subtotal</p>
+                            <p>29.99€</p>
+                        </div>
+
+                        <div class="col-md-3 pb-sm-3 pb-md-0">
+                            <a href="#" class="text-light">Eliminar</a>
+                            <i class="bi bi-trash3"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="mb-3 bg-dark text-light border-light border-0 border-top border-bottom border-light pt-2 pb-md-2"
+                    style="max-width: 1000px;">
+                    <div class="row g-0 d-flex text-center align-items-center">
+
+                        <div class="col-md-3">
+                            <img src="../assets/images/clothes2.jpg" class="img-fluid carrito-img">
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Precio</p>
+                            <p>17.99€</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Cantidad</p>
+                            <p>1</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Subtotal</p>
+                            <p>17.99€</p>
+                        </div>
+
+                        <div class="col-md-3 pb-sm-3 pb-md-0">
+                            <a href="#" class="text-light">Eliminar</a>
+                            <i class="bi bi-trash3"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="mb-3 bg-dark text-light border-light border-0 border-top border-bottom border-light pt-2 pb-md-2"
+                    style="max-width: 1000px;">
+                    <div class="row g-0 d-flex text-center align-items-center">
+
+                        <div class="col-md-3">
+                            <img src="../assets/images/clothes3.jpg" class="img-fluid carrito-img">
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Precio</p>
+                            <p>12.99€</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Cantidad</p>
+                            <p>1</p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="fs-5 fw-bold">Subtotal</p>
+                            <p>12.99€</p>
+                        </div>
+
+                        <div class="col-md-3 pb-sm-3 pb-md-0">
+                            <a href="#" class="text-light">Eliminar</a>
+                            <i class="bi bi-trash3"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- TOTAL COMPRA -->
+            <section>
+                <div class="mb-3 bg-dark text-light border-light border-0 border-top border-bottom border-light pt-2 pb-md-2"
+                    style="max-width: 1000px;">
+                    <div class="row g-0 d-flex text-center align-items-center">
+
+                        <div class="mb-3">
+                            <p class="m-0 mb-1">Entrega estimada 3-4 días laborales</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <p class="m-0 mb-1 fw-bold">Gastos de envío</p>
+                            <p class="m-0 mb-1">Gratis</p>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Tengo un Código Descuento
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Introduce tu Código Descuento</h1>
+                                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="" class="mb-3">
+                                                <input type="text" name="" id="">
+                                                <button class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                    data-bs-title="Comprueba si tu código es valido">Validar</button>
+                                            </form>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <p class="m-0 mb-1 fw-bold">Total</p>
+                            <p class="m-0 mb-1">60.97€</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <a href="../index.html" class="d-block btn btn-light" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Volver a la página de inicio">Continuar
+                                Comprando</a>
+                            <a href="#" class="d-block btn btn-primary mt-3" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Ir a la pasarela de pago">Pagar</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- PayPal Logo -->
+                <table border="0" cellpadding="10" cellspacing="0" align="center">
+                    <tr>
+                        <td align="center"></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup"
+                                title="How PayPal Works"
+                                onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img
+                                    src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg"
+                                    border="0" alt="PayPal Acceptance Mark"></a></td>
+                    </tr>
+                </table>
+                <!-- PayPal Logo -->
+            </section>
+
+        </main>
+
+
+
+
+
+
+        <!-- FOOTER -->
+
+        <footer class=" mt-5 pt-4 border-top border-2 border-secondary-subtle ">
+
+            <div class="d-none d-md-flex justify-content-evenly">
+                <div class="card bg-dark text-light border-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-center border-bottom">About us</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Política</li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Privacidad</li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Filosofía</li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">¿Quienes somos?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-dark text-light border-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-center border-bottom">Ayuda</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Atención al cliente
+                            </li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Contacto</li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Reparto</li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Métodos de pago</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-dark text-light border-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-center border-bottom">Follow</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="footer-links list-group-item bg-dark text-light border-dark text-nowrap">
+                                Instagram</li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark text-nowrap">Twitter
+                            </li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark text-nowrap">YouTube
+                            </li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark text-nowrap">Facebook
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-dark text-light border-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header text-center border-bottom">FAQ</div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Tiempos de entrega
+                            </li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Métodos de pago</li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Mi pedido se ha
+                                retrasado</li>
+                            <li class="footer-links list-group-item bg-dark text-light border-dark">Seguir mi pedido
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card d-block mb-3 bg-dark text-light text-center border-light">
+                <div class="card-body">
+                    DMShop&copy; David Martín de Castro
+                </div>
+            </div>
+
+        </footer>
+
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
